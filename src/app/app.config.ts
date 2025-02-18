@@ -13,9 +13,9 @@ export const appConfig: ApplicationConfig = {
     providePrimeNG({ theme: {
       preset: Aura,
       options: {
-        cssLayer: {
-          name: 'components',
-        },
+        // cssLayer: {
+        //   name: 'components',
+        // },
       },
     } }),
   ],
