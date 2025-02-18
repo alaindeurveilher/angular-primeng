@@ -22,4 +22,10 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render Home title', async () => {
+    await fixture.whenStable();
+    const compiled: HTMLElement = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Home');
+  });
 });
