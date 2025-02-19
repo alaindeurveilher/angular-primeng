@@ -15,10 +15,12 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
       providers: [provideExperimentalZonelessChangeDetection()],
-    }).overrideComponent(AppComponent, {
-      remove: { imports: [HeaderComponent] },
-      add: { imports: [MockHeaderComponent] },
-    }).compileComponents();
+    })
+      .overrideComponent(AppComponent, {
+        remove: { imports: [HeaderComponent] },
+        add: { imports: [MockHeaderComponent] },
+      })
+      .compileComponents();
   });
 
   it('should create the app', () => {

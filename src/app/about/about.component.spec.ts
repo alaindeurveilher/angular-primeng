@@ -11,8 +11,7 @@ describe('AboutComponent', () => {
     await TestBed.configureTestingModule({
       imports: [AboutComponent],
       providers: [provideExperimentalZonelessChangeDetection()],
-    })
-    .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AboutComponent);
     component = fixture.componentInstance;

@@ -10,8 +10,7 @@ describe('NotFoundComponent', () => {
     await TestBed.configureTestingModule({
       imports: [NotFoundComponent],
       providers: [provideExperimentalZonelessChangeDetection()],
-    })
-    .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;

@@ -11,13 +11,15 @@ export const appConfig: ApplicationConfig = {
     provideExperimentalZonelessChangeDetection(),
     provideRouter(routes),
     provideAnimationsAsync(),
-    providePrimeNG({ theme: {
-      preset: Aura,
-      options: {
-        // cssLayer: {
-        //   name: 'components',
-        // },
+    providePrimeNG({
+      theme: {
+        preset: Aura,
+        options: {
+          // cssLayer: {
+          //   name: 'components',
+          // },
+        },
       },
-    } }),
+    }),
   ],
 };
