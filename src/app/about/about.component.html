@@ -1,3 +1,21 @@
 <h1 class="text-2xl font-bold">About</h1>
 
-<p>about works!</p>
+<div class="flex flex-col space-y-4 pt-4">
+  <p-panel header="Header">
+    <p class="m-0">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint praesentium neque tempore, voluptatem laudantium reprehenderit blanditiis. Vero, in animi aspernatur culpa voluptatum optio. Omnis earum perferendis consequatur aliquam necessitatibus distinctio?
+    </p>
+  </p-panel>
+
+  <p-panel [showHeader]="false">
+    <p class="m-0 pt-4">
+      Panel without a header using deprecated showHeader. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint praesentium neque tempore, voluptatem laudantium reprehenderit blanditiis. Vero, in animi aspernatur culpa voluptatum optio. Omnis earum perferendis consequatur aliquam necessitatibus distinctio?
+    </p>
+  </p-panel>
+
+  <p-panel>
+    <p class="m-0 pt-4">
+      Panel content, without header prop nor header template. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint praesentium neque tempore, voluptatem laudantium reprehenderit blanditiis. Vero, in animi aspernatur culpa voluptatum optio. Omnis earum perferendis consequatur aliquam necessitatibus distinctio?
+    </p>
+  </p-panel>
+</div>
